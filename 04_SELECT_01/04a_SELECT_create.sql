@@ -1,5 +1,5 @@
 # Vorbereitung SELECT 
-
+\! cls
 
 DROP TABLE IF EXISTS boo.customers;
 
@@ -10,14 +10,14 @@ CREATE TABLE IF NOT EXISTS boo.customers (
     Adresse VARCHAR(255),
     Telefonnummer VARCHAR(20),
     EMail VARCHAR(100),
-    Alter INT,
+    Age INT,
     Bundesland VARCHAR(50),
     Wohnort VARCHAR(100)
 );
 
 
 # Inserts
-INSERT INTO boo.customers (ID, Name, Adresse, Telefonnummer, EMail, Alter, Bundesland, Wohnort)
+INSERT INTO boo.customers (ID, Name, Adresse, Telefonnummer, EMail, Age, Bundesland, Wohnort)
 VALUES
 (1, 'Sophia Müller', 'Musterstraße 1', '01234/56789', 'sophia.mueller@example.de', 25, 'Nordrhein-Westfalen', 'Köln'),
 (2, 'Noah Schmidt', 'Hauptstraße 2', '0221/123456', 'noah.schmidt@example.de', 30, 'Nordrhein-Westfalen', 'Düsseldorf'),
@@ -71,3 +71,4 @@ VALUES
 (50, 'Hans Schäfer', 'Schlossstraße 50', '089/777777', 'hans.schaefer@example.de', 33, 'Bayern', 'München');
 
 
+SELECT * FROM boo.customers;
