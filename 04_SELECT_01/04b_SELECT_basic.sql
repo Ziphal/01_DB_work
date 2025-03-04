@@ -22,6 +22,7 @@ LIMIT 10,20
 */
 
 # Sortieren , numerisch
+/*
 SELECT 
     Name AS Kundennamen,
     Age AS 'Alter'
@@ -30,5 +31,30 @@ FROM boo.customers
 ORDER BY Age DESC
 LIMIT 20
 ;
+*/
 
+# Sortieren , alphnumerisch / kombi
+/*
+SELECT 
+    Name AS Kundennamen,
+    Age AS 'Alter',
+    Wohnort
+FROM boo.customers
+ORDER BY Wohnort ASC, Age DESC
+-- ORDER BY Age DESC
+-- LIMIT 20
+;
+*/
+
+# Filtern mit WHERE
+SELECT 
+    Name AS Kundennamen,
+    Age AS 'Alter',
+    Wohnort
+FROM boo.customers
+WHERE Wohnort = "Berlin"
+-- ORDER BY Wohnort ASC, Age DESC
+ORDER BY Age DESC
+-- LIMIT 20
+;
 
