@@ -47,14 +47,20 @@ ORDER BY Wohnort ASC, Age DESC
 */
 
 # Filtern mit WHERE
-SELECT 
-    Name AS Kundennamen,
-    Age AS 'Alter',
-    Wohnort
-FROM boo.customers
-WHERE Wohnort = "Berlin"
--- ORDER BY Wohnort ASC, Age DESC
-ORDER BY Age DESC
+-- SELECT 
+--     Name AS Kundennamen,
+--     Age AS 'Alter',
+--     Wohnort
+-- FROM boo.customers
+-- WHERE Wohnort = "Berlin"
+-- -- ORDER BY Wohnort ASC, Age DESC
+-- ORDER BY Age DESC
 -- LIMIT 20
-;
+-- ;
 
+SELECT 
+    count((id))
+    -- Name AS Kundennamen
+FROM boo.customers
+LIMIT SELECT count(id) FROM boo.customers - 20 , 
+;
